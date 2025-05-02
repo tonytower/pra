@@ -2,13 +2,25 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Reproducción de vídeo</title>
+    <title>Vídeo interactivo en HTML5</title>
 </head>
 <body>
-    <h1>Demostración de vídeo en HTML5</h1>
-    <video controls width="720">
-        <source src="video_mod.mp4" type="video/mp4">
-        Tu navegador no soporta la etiqueta de vídeo en HTML5.
+    <h1>Vídeo con funcionalidades avanzadas en HTML5</h1>
+
+    <video 
+        controls 
+        autoplay 
+        muted 
+        loop 
+        playsinline 
+        width="720" 
+        poster="poster.jpg"
+        preload="auto">
+        <source src="video_web.mp4" type="video/mp4">
+        <source src="video_web.webm" type="video/webm">
+        Tu navegador no soporta el vídeo en HTML5.
     </video>
+
+    <p>Este vídeo comienza automáticamente, está silenciado por defecto, se reproduce en bucle, y se adapta a dispositivos móviles gracias a <code>playsinline</code>.</p>
 </body>
 </html>
